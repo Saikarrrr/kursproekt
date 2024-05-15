@@ -1,0 +1,480 @@
+/*--------------------------------------------------------------------------------------------------------------------BODY----------------------------------*/
+
+body {
+    background-color: #ffeee6;
+    margin: 0;
+    width: 1950px;
+    overflow-x: hidden;
+    padding-top: 97px;
+  }
+  /*--------------------------------------------------------------------------------------------------------------------СТИЛИ ДЛЯ header-----------------------*/
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: с;
+    width: 100%; 
+    position: relative;
+     background-color: #dba68a;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: #dba68a;
+     z-index: 1000; 
+  }
+  
+  header::after {
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 1px; 
+    background-color: white; 
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ЛОГОТИП--------------------------------*/
+  
+  .logo img { 
+    width: 200px; 
+    margin-left: 20px;
+    filter: drop-shadow(2px 2px 2px)
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ПОИСКОВИК------------------------------*/
+  
+  .search-bar {
+    flex: auto;
+    margin-left: 2%; 
+    margin-right: 2%; 
+    position: relative;
+  }
+  
+  .search-bar input {
+    width: calc(100% - 45px);
+    height: 30px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ЛУПА------------------------------------*/
+  
+  .search-input {
+    background-image: url('../Курсач/Картиночки/Лупа.png'); 
+    background-repeat: no-repeat;
+    background-position: 8px 11px;
+    background-size: 20px 20px; 
+    text-indent: 26px; 
+    font-size: 35px; 
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ШАПКА ПРИВЕТСТВИЯ-----------------------*/
+  
+  .welcome-message {
+    text-align: center; 
+    margin-top: -19px; 
+    width: 100%;
+    font-family: 'Snell Roundhand', cursive; 
+  }
+  
+  .welcome-message p {
+    background-color: #dba68a; 
+    color: white; 
+    font-size: 160%; 
+    padding: 20px; 
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+  
+  .welcome-message img {
+  
+    width: 100%; 
+    display: block; 
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------------------ЧЕЛОВЕЧЕК--------------------------------*/
+  
+  .person {
+    height: 8%;
+    width: 7%; 
+    filter: drop-shadow(2px 2px 2px)
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------КАТАЛОГ----------------------------------*/
+  
+  .katalog {
+    text-align: center; 
+    color: #dba68a; 
+    font-size: 50px;
+    font-family: 'Snell Roundhand', cursive; 
+    filter: drop-shadow(2px 2px 2px rgba(199, 136, 136, 0.432));
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ОСНОВНОЙ ФОН-----------------------------*/
+  
+  .header-background {
+    background-color: white;
+  
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ТАБЛИЦЫ КНИЖЕНЦИЙ------------------------*/
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin: 0 5%; /* Добавили отступы от края страницы справа и слева */
+    text-transform: uppercase;
+  }
+
+  .card-position {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Изменили количество столбцов и ширину */
+    grid-column-gap: 3%; /* Уменьшили отступы между столбцами */
+  }
+
+  
+  
+  li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  
+  .card-image {
+    margin-bottom: 1em;
+    transition: 0.5s; /* Время эффекта */
+  }
+  
+    .card-image:hover{
+    transform: scale(1.07); /* Увеличиваем масштаб */
+  }
+  
+  .card-title {
+    font-size: 1em;
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    border-bottom: 0.1em solid #f1cebb;
+    padding-bottom: 10px;
+  }
+  
+  button {
+    border-width: 0;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .card-button:hover {
+    background-color: hsl(21, 64%, 65%);
+  }
+
+  .card-button {
+    font-family: 'Snell Roundhand', cursive;
+    background-color: #dba68a;
+    display: block;
+    width: 100%;
+    padding: 3%;
+    letter-spacing: 6%;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    margin-top: 6px;
+  }
+  
+  .card {
+    border-bottom:  solid #dba68a; 
+    padding: 3% 3%; /* Добавили отступы справа и слева */
+    font-family: 'Snell Roundhand', cursive;
+    width: fit-content;
+  }
+  
+  .card-description {
+    background-color: #ecbfa6;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .card-description p {
+    font-size: 1em; /* Увеличение размера шрифта */
+    margin: 0 auto; /* Центрирование текста */
+  }
+  
+  .button-load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  
+  .card-description.loading-item {
+    color: white; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------------------ССЫЛОЧКИ---------------------------------*/
+  
+  a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет текста от родительского элемента */
+    transition: color 0.3s; /* Плавное изменение цвета */
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------НАВЕРХ-----------------------------------*/
+  
+  #btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: #dba68a;
+    color: white;
+    cursor: pointer;
+    padding: 10px 17px; 
+    border-radius: 50%; 
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0 0 1px white; 
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #f1cebb;
+  }
+  
+  
+  
+  /*--------------------------------------------------------------------------------------------------------------------FOOTER-----------------------------------*/
+  
+  /* Общие стили для подвала */
+  footer {
+    background-color: #dba68a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 12%;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  /* Стили для заголовков секций */
+  .footer-section h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  /* Стили для списков ссылок */
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Стили для социальных иконок */
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    margin-right: 20px; /* Расстояние между иконками */
+  }
+  
+  /* Стили для изображений иконок */
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Делаем изображения круглыми */
+  }
+  
+  .bibu{
+    color: #ffffff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************************************************************************************************/
+@media screen and (width < 480px) {
+  .card-position {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card-position li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .welcome-message p {
+    font-size: 300%;
+  }
+
+  header {
+    padding: 10px; /* Уменьшаем отступы внутри шапки */
+  }
+
+  .logo img {
+    width: 350px; /* Уменьшаем размер логотипа для маленьких экранов */
+    margin-left: 10px; /* Уменьшаем отступ слева */
+  }
+
+  .search-bar input {
+    width: 80%; /* Уменьшаем ширину поля ввода */
+    height: 80px;
+    padding: 5px; /* Уменьшаем внутренние отступы */
+  }
+
+  .search-input {
+    background-image: url('../Курсач/Картиночки/Лупа.png'); 
+    background-repeat: no-repeat;
+    background-position: 17px 25px;
+    background-size: 40px 40px; 
+    text-indent: 65px;
+    font-size: 35px; 
+  }
+
+  .welcome-message p {
+    font-size: 60px; /* Уменьшаем размер текста приветствия */
+    margin-top: 150px;
+    margin-right: 210px;
+  }
+
+  .person {
+    width: 10%; /* Уменьшаем размер изображения персоны */
+  }
+
+  .katalog {
+    font-size: 100px; /* Уменьшаем размер текста заголовка каталога */
+    margin-left: -10%;
+  }
+
+  .card {
+    width: 80%; /* Уменьшаем ширину карточек */
+    margin-left: -7%;
+  }
+
+  .card-description {
+    font-size: 37px; /* Уменьшаем размер шрифта описания карточек */
+    padding: 3%;
+  }
+
+  .button-load {
+    max-width: 100%; /* Устанавливаем максимальную ширину кнопки загрузки на всю ширину экрана */
+    margin: 0; /* Убираем отступы */
+  }
+
+  .footer-section {
+    padding-left: 5%; /* Уменьшаем отступ слева в футере */
+  }
+
+  .footer-section h4 {
+    font-size: 16px; /* Уменьшаем размер заголовков в футере */
+    margin-bottom: 5px; /* Уменьшаем отступ снизу */
+  }
+
+  .social-icons img {
+    width: 40px; /* Уменьшаем размер социальных иконок */
+    height: 40px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(430px, 1fr)); /* Изменили количество столбцов и ширину */
+    grid-column-gap: 0.2%; /* Уменьшили отступы между столбцами */
+    margin: 0 7%; /* Добавили отступы от края страницы справа и слева */
+    text-transform: uppercase;
+  }
+
+  
+  button {
+    border-width: 0;
+    cursor: pointer;
+    background: none;
+  }
+  
+  .card-button {
+    font-family: 'Snell Roundhand', cursive;
+    background-color: #dba68a;
+    display: block;
+    width: 100%;
+    padding: 4%;
+    letter-spacing: 6%;
+    border-radius: 10px;
+    color: white;
+    font-size: 75px;
+    margin-top: 6px;
+  }
+  
+  .card {
+    border-bottom:  solid #dba68a; 
+    padding: 3% 3%; /* Добавили отступы справа и слева */
+    font-family: 'Snell Roundhand', cursive;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

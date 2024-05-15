@@ -1,0 +1,650 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*--------------------------------------------------------------------------------------------------------------------BODY----------------------------------*/
+
+body {
+    background-color: #ffeee6;
+    margin: 0;
+    width: 1950px;
+    overflow-x: hidden;
+  }
+  /*--------------------------------------------------------------------------------------------------------------------СТИЛИ ДЛЯ header-----------------------*/
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    background-color: с;
+    width: 100%; 
+    position: relative;
+     background-color: #dba68a;
+  }
+  
+  header::after {
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 1px; 
+    background-color: white; 
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ЛОГОТИП--------------------------------*/
+  
+  .logo img { 
+    width: 200px; 
+    margin-left: 20px;
+    filter: drop-shadow(2px 2px 2px)
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ПОИСКОВИК------------------------------*/
+  
+  .search-bar {
+    flex: auto;
+    margin-left: 2%; 
+    margin-right: 2%; 
+    position: relative;
+  }
+  
+  .search-bar input {
+    width: calc(100% - 45px);
+    height: 30px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ЛУПА------------------------------------*/
+  
+  .search-input {
+    background-image: href="'../Курсач/Картиночки/Лупа.png'"; 
+    background-repeat: no-repeat;
+    background-position: 8px 11px;
+    background-size: 20px 20px; 
+    text-indent: 26px; 
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------ШАПКА ПРИВЕТСТВИЯ-----------------------*/
+  
+  .welcome-message {
+    text-align: center; 
+    margin-top: -40px; 
+    width: 100%; 
+  }
+  
+  .welcome-message p {
+    background-color: #db968a; 
+    color: white; 
+    font-size: 160%; 
+    padding: 20px; 
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+  
+  .welcome-message img {
+    width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------------------ЧЕЛОВЕЧЕК--------------------------------*/
+  
+  .person {
+    height: 8%;
+    width: 1px;
+    margin-right: 160px; 
+    filter: drop-shadow(2px 2px 2px);
+  }
+
+  .lord-icon {
+    padding: 0 150px 0 0;
+  } 
+
+  /*--------------------------------------------------------------------------------------------------------------------ССЫЛОЧКИ---------------------------------*/
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------КНИЖЕЧКА---------------------------------*/
+
+  .container {
+    display: flex; 
+    align-items: center; 
+    padding: 50px; 
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  
+  .container .image {
+    width: 500px; 
+    margin-right: 90px; 
+  }
+  
+  .container .text {
+    flex: 1; 
+  }
+  
+  .container h1 {
+    font-size: 50px; 
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px);
+    font-family: 'Snell Roundhand', cursive;
+  }
+
+  .container h2 {
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .container h3 {
+    font-size: 20px; 
+    font-family: 'Snell Roundhand', cursive;
+    color: #7a7a7a;
+  }
+
+  .container p {
+    font-size: 25px; 
+    margin-bottom: 20px; 
+    margin-right: 100px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------------------КНОПАШКИ---------------------------------*/
+
+.button-container {
+  display: flex; 
+  align-items: center; 
+}
+
+.button1,
+.button2,
+.button3 {
+  margin-right: 10px; 
+}
+
+  /*--1--*/
+
+  .button1 {
+    background-color: #9698fa; 
+    border: 2px solid #595cb6;
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.3s; 
+    cursor: pointer;
+    border-radius: 13px; 
+}
+
+.button1:hover {
+    background-color: rgb(121, 123, 253); 
+}
+
+/*--2--*/
+
+.button2 {
+    background-color: #aeec5c; 
+    border: 2px solid rgb(107, 192, 95);
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.3s; 
+    cursor: pointer;
+    border-radius: 13px; 
+}
+
+.button2:hover {
+    background-color: #90da2f; 
+}
+
+/*--3--*/
+
+.dropdown {
+  background-color: #fce253; 
+  border: 2px solid rgb(255, 196, 0);
+  color: white;
+  padding: 10px 20px; 
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+.dropdown:hover {
+  background-color: rgb(255, 215, 86); 
+}
+
+ /*--------------------------------------------------------------------------------------------------------------------ЛИСТАЛКА----------------------------------*/
+
+ .slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;
+    width: 1450px;
+    margin-left: 190px;
+  }
+  
+  .gallery {
+    position: relative;
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 20px;
+    width: fit-content;
+    filter: drop-shadow(2px 2px 2px)
+  }
+  
+  .gallery-item {
+    transition: transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: calc(100% / 5);
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-size: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    box-shadow: 0 0 20px rgb(255, 236, 221); 
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #dba68a;
+    color: white;
+    border: none;
+    padding: 1px 30px;
+    cursor: pointer;
+    border-radius: 70px;
+    transition: background-color 0.3s ease;
+    height: min-content;
+    width: min-content;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev-button {
+    left: 10px;
+    z-index: 1;
+  }
+  
+  .next-button {
+   right: 5px;
+  }
+
+  .prev-button:hover,
+  .next-button:hover {
+    color: #dba68a;
+  }
+  
+  .prev-button > img,
+  .next-button > img {
+    width: 25px;
+    height: 30px;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #dba68a;
+  }
+  
+  .gallery-item {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+  }
+  
+  .lustrs {
+    background-color: #dba68a;
+    border-radius: 13px;
+    height: 20px; 
+    color: white;
+    margin: 15px;
+    padding-top: 10px;
+  }
+
+  .gallery-item p {
+    background-color: #dba68a;
+    font-family: sans-serif;
+    text-align: center;
+    height: 25px;
+    margin: 10px;
+  }
+  
+  .hidden {
+    display: none; 
+  }
+
+ /*--------------------------------------------------------------------------------------------------------------------ПОХОЖЕЕ-----------------------------------*/
+
+ .dr {
+  background-color: #dba68a;
+  font-size: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+
+}
+
+.dr-text {
+  text-align: center;
+  color: white;
+  font-family: 'Snell Roundhand', cursive;
+  font-size: 180%;
+  filter: drop-shadow(1px 1px 1px);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------НАВЕРХ-----------------------------------*/
+
+#btnScrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: #dba68a;
+  color: white;
+  cursor: pointer;
+  padding: 10px 17px; 
+  border-radius: 50%; 
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 0 0 1px white;
+}
+
+#btnScrollToTop:hover {
+  background-color: #f1cebb;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------FOOTER-----------------------------------*/
+
+/* Общие стили для подвала */
+footer {
+  background-color: #dba68a;
+  padding: 80px;
+  display: flex;
+  justify-content: flex-start; /* Выравниваем содержимое влево */
+  align-items: flex-start;
+  margin-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 48%;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+/* Стили для заголовков секций */
+.footer-section h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: 'Snell Roundhand', cursive;
+}
+
+/* Стили для списков ссылок */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Стили для социальных иконок */
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 20px; /* Расстояние между иконками */
+}
+
+/* Стили для изображений иконок */
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Делаем изображения круглыми */
+}
+
+.bibu{
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+@media screen and (width < 480px) {
+
+
+  /*--1--*/
+
+  .button1 {
+    padding: 20px 40px; 
+    font-size: 45px;
+}
+
+/*--2--*/
+
+.button2 {
+  padding: 20px 40px; 
+  font-size: 45px;
+}
+
+/*--3--*/
+
+.dropdown {
+  padding: 20px 40px; 
+    font-size: 45px;
+}
+
+
+
+
+header {
+  padding: 10px; /* Уменьшаем отступы внутри шапки */
+}
+
+.logo img {
+  width: 350px; /* Уменьшаем размер логотипа для маленьких экранов */
+  margin-left: 10px; /* Уменьшаем отступ слева */
+}
+
+.search-bar input {
+  width: 98%; /* Уменьшаем ширину поля ввода */
+  height: 80px;
+  padding: 5px; /* Уменьшаем внутренние отступы */
+}
+
+.search-input {
+  background-image: url('../Курсач/Картиночки/Лупа.png'); 
+  background-repeat: no-repeat;
+  background-position: 17px 25px;
+  background-size: 40px 40px; 
+  text-indent: 65px;
+  font-size: 35px; 
+}
+
+
+
+.container {
+  display: flex; 
+  align-items: center; 
+  padding: 50px; 
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.container .image {
+  width: 500px; 
+  margin-right: 90px; 
+}
+
+.container .text {
+  flex: 1; 
+}
+
+.container h1 {
+  font-size: 40px; 
+  margin-bottom: -11px;
+  filter: drop-shadow(1px 1px 1px);
+  font-family: 'Snell Roundhand', cursive;
+}
+
+.container h2 {
+  font-size: 60px; 
+  margin-bottom: 1px;
+  font-family: 'Snell Roundhand', cursive;
+}
+
+.container h3 {
+  font-size: 40px; 
+  font-family: 'Snell Roundhand', cursive;
+  color: #7a7a7a;
+}
+
+.container p {
+  font-size: 24px; 
+  margin-bottom: 1px;
+  margin-right: 100px;
+  font-family: 'Snell Roundhand', cursive;
+}
+
+.dr {
+  background-color: #dba68a;
+  font-size: 100%;
+  padding: 0.1%;
+  margin-top: 20px;
+  margin-bottom: 45px;
+
+}
+
+.dr-text {
+  text-align: center;
+  color: white;
+  font-family: 'Snell Roundhand', cursive;
+  font-size: 100px;
+  filter: drop-shadow(1px 1px 1px);
+  margin-right: 180px;
+}
+
+
+/* Стили для каждой секции футера */
+.footer{
+padding-left: -200px;
+}
+
+
+
+.footer-section {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+  flex-direction: column; /* Размещаем элементы друг под другом */
+}
+
+/* Стили для заголовков секций */
+.footer-section h4 {
+  font-size: 30px; /* Увеличиваем размер заголовка */
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-family: 'Snell Roundhand', cursive;
+}
+
+/* Стили для списков ссылок */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+
+.footer-section ul li {
+  margin-bottom: 30px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 40px; /* Увеличиваем размер текста */
+}
+
+/* Стили для социальных иконок */
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 20px; /* Расстояние между иконками */
+}
+
+/* Стили для изображений иконок */
+.social-icons img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Делаем изображения круглыми */
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-around;
+  width: 1450px;
+  margin-left: 140px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+
+
+
+
+
+
+
+
+}
