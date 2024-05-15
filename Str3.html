@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="str3.css">
+    <title>Стрвница 3</title>
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+</head>
+<body>
+<form id="form">
+    <div class="form-group">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="button-container">
+        <input type="submit" value="Зарегистрироваться" class="green-button">
+        <input type="submit" value="Войти" class="blue-button">
+    </div>
+</form>
+<script>
+    const form = document.getElementById("form");
+    console.log('BLYAAA', form)
+    form.addEventListener("submit", showWelcomeMessage);
+    
+
+    function showWelcomeMessage(e) {
+        e.preventDefault()
+        //форма
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        // корректность
+        if (username.trim() === "" || email.trim() === "" || password.trim() === "") {
+            return false; 
+        } else {
+            console.log('aaa')
+            alert("Вы вошли в аккаунт! Мир книг ждет вас...");
+            window.location.href = 'file:///C:/Users/Saikarrr/Desktop/%D0%9B%D0%B0%D0%B1%D1%8B/2%20%D1%81%D0%B5%D0%BC/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/Str4.html' 
+            return true; 
+        }
+    }
+</script> 
+</body>
+</html>

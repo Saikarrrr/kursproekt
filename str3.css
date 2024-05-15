@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Заменяем height: 100%; на height: 100vh; чтобы указать высоту вьюпорта */
+  background-color: #fff2ea;
+  font-family: Arial, sans-serif;
+  overflow-y: hidden /* Заменяем overflow-y: hidden; на overflow-y: auto; чтобы показывать полосу прокрутки при необходимости */
+}
+
+/*Прямоугольничек*/
+form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+ /*Строчечки*/
+label {
+  display: block;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/*Кнопашки*/
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.green-button,
+.blue-button {
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.green-button {
+  background-color: #4CAF50;
+  margin-right: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 32, 4);
+}
+
+.green-button:hover {
+  background-color: #12c718;
+  margin-right: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 32, 4);
+}
+
+.blue-button:hover {
+  background-color: #416ce2;
+  box-shadow: 2px 2px 2px rgb(16, 0, 41);
+}
+
+
+.blue-button {
+  background-color: #4a66b3;
+  box-shadow: 2px 2px 2px rgb(16, 0, 41);
+}
+
+
+
+/**********************************************************************/
+  
+@media screen and (width < 480px) {
+
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff2ea;
+    font-family: Arial, sans-serif;
+  }
+
+  /*Прямоугольничек*/
+  form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+   /*Строчечки*/
+  label {
+    display: block;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /*Кнопашки*/
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.green-button,
+.blue-button {
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px rgb(0, 32, 4);
+}
+
+.blue-button {
+    background-color: #455da0;
+    box-shadow: 2px 2px 2px rgb(16, 0, 41);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}

@@ -1,0 +1,493 @@
+/*--------------------------------------------------------------------------------------------------------------------BODY----------------------------------*/
+
+body {
+    background-color: #fff1e6;
+    margin: 0;
+    overflow-x: hidden;
+    width: 1950px;
+  }
+
+/*--------------------------------------------------------------------------------------------------------------------ОСНОВА-----------------------------------*/
+.container {
+    display: flex; 
+    align-items: center; 
+    padding: 30px; 
+    margin-left: 56px;
+  }
+  
+  .container .image {
+    width: 250px; 
+    margin-right: 30px; 
+    border-radius: 50%;
+  }
+  
+  .container .text {
+    flex: 1; 
+  }
+  
+  .container h1 {
+    font-size: 50px; 
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px);
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .container p {
+    font-size: 25px; 
+    margin-bottom: 20px; 
+    margin-right: 100px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .image-container {
+    position: relative;
+}
+
+.image-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    border-radius: 5px; 
+    z-index: 1; 
+}
+
+.image-container:hover {
+  cursor: pointer;
+}
+
+.image-menu.active {
+    display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------НАВЕРХ-----------------------------------*/
+
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: #dba68a;
+    color: white;
+    cursor: pointer;
+    padding: 10px 17px; 
+    border-radius: 50%; 
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0 0 1px white; 
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #f1cebb;
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------------------FOOTER-----------------------------------*/
+
+  footer {
+    background-color: #dba68a;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-left: 12%;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+
+  .footer-section h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    margin-right: 20px; 
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+  }
+  
+  .bibu{
+    color: #ffffff;
+  }
+
+ /*--------------------------------------------------------------------------------------------------------------------ДИОГРАММА-----------------------------------*/
+
+ .diograma-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 600px; 
+}
+
+.diograma img {
+  max-width: 100%; 
+  max-height: 100%; 
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------ГЛАВНАЯ--------------------------------------*/
+
+  .person {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    z-index: 999; 
+    filter: drop-shadow(1px 1px 1px);
+}
+
+
+  .lord-icon {
+    padding: 0 150px 0 0;
+  } 
+
+  .person2 {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+    z-index: 999; 
+    filter: drop-shadow(1px 1px 1px);
+    margin-right: 5%;
+}
+
+
+  .lord-icon {
+    padding: 0 150px 0 0;
+  } 
+
+
+/*--------------------------------------------------------------------------------------------------------------------ТАБЛИЦЫ КНИЖЕНЦИЙ------------------------*/
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-column-gap: 3%; 
+  margin: 0 5%; 
+  text-transform: uppercase;
+}
+
+
+
+
+@media screen and (width < 480px) {
+  ul {
+    grid-template-columns: 1fr !important;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.card-image {
+  margin-bottom: 1em;
+  transition: 0.5s; 
+}
+
+  .card-image:hover{
+  transform: scale(1.07); 
+}
+
+.card-title {
+  font-size: 1em;
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  border-bottom: 0.1em solid #f1cebb;
+  padding-bottom: 10px;
+}
+
+button {
+  border-width: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.card-button:hover {
+  background-color: hsl(21, 64%, 65%);
+}
+
+.card-button {
+  font-family: 'Snell Roundhand', cursive;
+  background-color: #dba68a;
+  display: block;
+  width: 100%;
+  padding: 3%;
+  letter-spacing: 6%;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  margin-top: 6px;
+}
+
+.card {
+  border-bottom:  solid #dba68a; 
+  padding: 3% 3%; 
+  font-family: 'Snell Roundhand', cursive;
+}
+
+.card-description {
+  background-color: #ecbfa6;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  text-wrap: nowrap;
+}
+
+.card-description p {
+  font-size: 1em; 
+  margin: 0 auto; 
+}
+
+.button-load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.card-description.loading-item {
+  color: white; 
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------ССЫЛОЧКИ---------------------------------*/
+
+a {
+  text-decoration: none; 
+  color: inherit;
+  transition: color 0.3s; 
+}
+
+h1 {
+  font-size: 30px; 
+  margin-bottom: 20px;
+  filter: drop-shadow(1px 1px 1px);
+  font-family: 'Snell Roundhand', cursive;
+  text-align: center; 
+}
+
+h2 {
+  font-size: 30px; 
+  margin-bottom: 20px;
+  filter: drop-shadow(1px 1px 1px);
+  font-family: 'Snell Roundhand', cursive;
+
+}
+
+
+
+@media screen and (width < 480px) {
+
+/* Стили для каждой секции футера */
+.footer{
+padding-left: -20%;
+  }
+  
+  
+  
+  .footer-section {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    padding-left: 0;
+    flex-direction: column; /* Размещаем элементы друг под другом */
+  }
+  
+  /* Стили для заголовков секций */
+  .footer-section h4 {
+    font-size: 30px; /* Увеличиваем размер заголовка */
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  /* Стили для списков ссылок */
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 30px;
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    align-items: flex-start;
+  }
+  
+  .footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 40px; /* Увеличиваем размер текста */
+  }
+  
+  /* Стили для социальных иконок */
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    margin-right: 20px; /* Расстояние между иконками */
+  }
+  
+  /* Стили для изображений иконок */
+  .social-icons img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Делаем изображения круглыми */
+  }
+  
+  .slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;
+    width: 1450px;
+    margin-left: 140px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(480px, 1fr)); /* Изменили количество столбцов и ширину */
+    grid-column-gap: 0.2%; /* Уменьшили отступы между столбцами */
+    margin: 0 3%; /* Добавили отступы от края страницы справа и слева */
+    text-transform: uppercase;
+  }
+
+
+.container {
+    display: flex; 
+    align-items: center; 
+    padding: 30px; 
+    margin-left: 56px;
+  }
+  
+  .container .image {
+    width: 250px; 
+    margin-right: 30px; 
+    border-radius: 50%;
+  }
+  
+  .container .text {
+    flex: 1; 
+  }
+  
+  .container h1 {
+    font-size: 50px; 
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px);
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .container p {
+    font-size: 25px; 
+    margin-bottom: 20px; 
+    margin-right: 100px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .image-container {
+    position: relative;
+}
+
+.image-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    border-radius: 5px; 
+    z-index: 1; 
+}
+
+.image-menu.active {
+    display: block;
+}
+
+
+
+.person {
+  position: fixed;
+  top: 80px; 
+  right: 80px; 
+  z-index: 999; 
+  filter: drop-shadow(1px 1px 1px);
+}
+
+
+.lord-icon {
+  padding: 0 150px 0 0;
+} 
+
+.p{
+  font-size: 28px;
+}
+
+
+}

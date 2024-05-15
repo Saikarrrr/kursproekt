@@ -1,0 +1,27 @@
+<styles>
+  <footer-section>
+    <h4>
+      <font-size>20px</font-size>
+      <color>#ffffff</color>
+      <margin-bottom>10px</margin-bottom>
+      <font-family>'Snell Roundhand', cursive</font-family>
+    </h4>
+
+    <ul>
+      <list-style>none</list-style>
+      <padding>0</padding>
+      <margin>0</margin>
+      <display>flex</display>
+      <flex-direction>column</flex-direction>
+    </ul>
+
+    <li>
+      <margin-bottom>10px</margin-bottom>
+    </li>
+
+    <a>
+      <color>#ffffff</color>
+      <text-decoration>none</text-decoration>
+    </a>
+  </footer-section>
+</styles>

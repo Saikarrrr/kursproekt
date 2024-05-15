@@ -1,0 +1,453 @@
+body { /*Фон*/
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://polinka.top/uploads/posts/2023-06/1685655560_polinka-top-p-kartinka-fon-knigi-pinterest-1.jpg');
+    margin: 0;
+    padding: 0;
+  }
+
+  .container { /*Фон*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .card1 { /*Тенюшка*/
+    width: 90%;
+    height: 90%;
+    background-color: #fff5e7;
+    box-shadow: 0 50px 100px #ffe8e0;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  
+
+  .card-button1 { /*Кнопашка*/
+    padding: 20px 60px;
+    background-color: #e09a74;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #c47a58;
+    margin-bottom: 20%;
+    font-size: 150%;
+  }
+
+  .card-button1:hover {
+    background-color: #ffab84;
+  }
+
+  .logo img { 
+    position: absolute;
+    width: 30%; 
+    height: auto;
+    filter: drop-shadow(2px 2px 2px);
+    top: 7%;
+    left: 35%;
+  }
+
+  .container-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .container-side img {
+    max-width: 30%;
+    max-height: 30%;
+    margin: 5%;
+    filter: drop-shadow(2px 2px 5px);
+  }
+
+  .container-side div {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: 'Snell Roundhand', cursive;
+    margin: 5%;
+    font-size: 22px;
+  }
+
+  .tex{
+    font-family: 'Snell Roundhand', cursive;
+    font-size: 22px;
+    color: #db946e;
+    text-shadow: 4px 4px 5px #e7dfdb;
+  }
+
+  .container {
+    display: flex; 
+    align-items: center; 
+    padding: 30px; 
+    margin-left: 56px;
+  }
+  
+  .container .image {
+    width: 250px; 
+    margin-right: 30px; 
+    border-radius: 50%;
+  }
+  
+  .container .text {
+    flex: 1; 
+  }
+  
+  .container h1 {
+    font-size: 50px; 
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px);
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .container p {
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    margin-right: 100px;
+    font-family: 'Snell Roundhand', cursive;
+  }
+  
+  .image-container {
+    position: relative;
+}
+
+  .image-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    border-radius: 5px; 
+    z-index: 1; 
+}
+
+  .image-menu.active {
+    display: block;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------ТАБЛИЦЫ КНИЖЕНЦИЙ------------------------*/
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr)); /* Изменили количество столбцов и ширину */
+  grid-column-gap: 3%; /* Уменьшили отступы между столбцами */
+  margin: 0 5%; /* Добавили отступы от края страницы справа и слева */
+  text-transform: uppercase;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.card-image {
+  margin-bottom: 1em;
+  transition: 0.5s; /* Время эффекта */
+}
+
+  .card-image:hover{
+  transform: scale(1.07); /* Увеличиваем масштаб */
+}
+
+.card-title {
+  font-size: 1em;
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  border-bottom: 0.1em solid #f1cebb;
+  padding-bottom: 10px;
+}
+
+button {
+  border-width: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.card-button:hover {
+  background-color: hsl(21, 64%, 65%);
+}
+
+.card-button {
+  font-family: 'Snell Roundhand', cursive;
+  background-color: #dba68a;
+  display: block;
+  width: 100%;
+  padding: 3%;
+  letter-spacing: 6%;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  margin-top: 6px;
+}
+
+.card {
+  border-bottom:  solid #dba68a; 
+  padding: 3% 3%; /* Добавили отступы справа и слева */
+  font-family: 'Snell Roundhand', cursive;
+}
+
+.card-description {
+  background-color: #ecbfa6;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 8px;
+  display: block;
+  width: 100%;
+}
+
+.card-description p {
+  font-size: 5%; /* Увеличение размера шрифта */
+  margin: 0 auto; /* Центрирование текста */
+}
+
+.button-load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.card-description.loading-item {
+  color: white; 
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------ССЫЛОЧКИ---------------------------------*/
+
+a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: inherit; /* Наследуем цвет текста от родительского элемента */
+  transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+
+h2 {
+  color: #db946e;
+  font-family: 'Snell Roundhand', cursive;
+  border-bottom:  solid #ffdcc8; 
+  border-top: solid #ffdcc8;
+  font-size: 300%;
+  padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************/
+  
+@media screen and (width < 480px) {
+
+
+    .container-side div {
+      font-size: 6px;
+    }
+
+  .container-side img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 5%;
+  }
+
+  .card1 { /*Тенюшка*/
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px #e09a74;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .card-button { /*Кнопашка*/
+    padding: 5px 10px;
+  }
+
+  .tex{
+    font-size: 8px;
+    text-shadow: 1px 1px 1px rgb(255, 0, 0)b;
+  }
+
+  .card-button1 { /*Кнопашка*/
+    padding: 10px 40px;
+    background-color: #e09a74;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #c47a58;
+    margin-bottom: 2%;
+    font-size: 80%;
+  }
+
+  .tex h1 {
+    font-size: 16px; 
+  }
+
+  .tex{
+    text-shadow: 1px 1px 3px #e7dfdb;
+  }
+
+  h2 {
+    color: #db946e;
+    font-family: 'Snell Roundhand', cursive;
+    border-bottom:  solid #ffdcc8; 
+    border-top: solid #ffdcc8;
+    font-size: 150%;
+    padding: 1%;
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto; /* Устанавливаем верхний и нижний отступ в 2% и автоматический отступ по горизонтали */
+    max-width: 430px; /* Устанавливаем максимальную ширину контейнера в 430 пикселей */
+    padding: 0 10px; /* Добавляем горизонтальные отступы внутри контейнера */
+  }
+
+  .logo img { 
+    position: absolute;
+    width: 30%; 
+    height: auto;
+    filter: drop-shadow(2px 2px 2px);
+    top: 1%;
+    left: 35%;
+  }
+
+
+
+
+
+
+  .card-description.loading-item {
+    color: white; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+
+  .container-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .container-side img {
+    max-width: 30%;
+    max-height: 30%;
+    margin: 3%;
+    filter: drop-shadow(2px 2px 5px);
+  }
+
+  .container-side div {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: 'Snell Roundhand', cursive;
+    margin: 5%;
+    font-size: 5px;
+    margin-top: 8%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ul {
+    grid-template-columns: repeat(2, minmax(120px, 1fr)); /* Изменяем количество столбцов для маленьких экранов */
+    grid-column-gap: 5%; /* Увеличиваем отступы между столбцами */
+    margin: 0 3%; /* Уменьшаем отступы от края страницы справа и слева */
+  }
+
+  .card-button {
+    font-size: 60%; /* Уменьшаем размер кнопки для маленьких экранов */
+    letter-spacing: 4px; /* Уменьшаем расстояние между буквами */
+    margin-top: 10px; /* Увеличиваем отступ сверху */
+  }
+
+  .card {
+    padding: 5% 5%; /* Увеличиваем отступы справа и слева */
+  }
+
+  .card-description {
+    font-size: 4px; /* Уменьшаем размер шрифта описания карточки */
+  }
+
+  .card-description p {
+    font-size: 8px; /* Уменьшаем размер текста внутри описания карточки */
+  }
+
+  .button-load {
+    max-width: 100%; /* Максимальная ширина кнопки загрузки на всю ширину экрана */
+    margin: 0; /* Убираем отступы */
+  }
+
+  .card-description.loading-item {
+    margin-top: 10px; /* Уменьшаем отступ сверху для загрузочного элемента */
+    margin-bottom: 5px; /* Уменьшаем отступ снизу для загрузочного элемента */
+  }
+
+
+
+
+}  
+
